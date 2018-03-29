@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+
+	<class name="Tongji" table="Tongji" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+
+		<property name="time" type="string">
+			<column name="time" length="50" />
+		</property>
+
+		<property name="coursenum" type="integer">
+			<column name="coursenum" />
+		</property>
+		<property name="courseprice" type="integer">
+			<column name="courseprice" />
+		</property>
+		<property name="productnum" type="integer">
+			<column name="productnum" />
+		</property>
+		<property name="productprice" type="integer">
+			<column name="productprice" />
+		</property>
+		<property name="productpoint" type="integer">
+			<column name="productpoint" />
+		</property>
+		<property name="huiyuannum" type="integer">
+			<column name="huiyuannum" />
+		</property>
+		<property name="huiyuanprice" type="integer">
+			<column name="huiyuanprice" />
+		</property>
+		<property name="price" type="integer">
+			<column name="price" />
+		</property>
+
+	</class>
+</hibernate-mapping>

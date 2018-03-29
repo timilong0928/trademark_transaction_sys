@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="BackTalk" table="backtalk" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="forumId" type="integer">
+			<column name="forumid" />
+		</property>
+		
+		<property name="adminId" type="integer">
+			<column name="adminid" />
+		</property>
+
+		<property name="talkId" type="integer">
+			<column name="talkid" />
+		</property>
+		
+		<property name="content" type="text">
+			<column name="content"/>
+		</property>
+
+		<property name="time" type="string">
+			<column name="time" length="50" />
+		</property>
+		
+		<property name="showTime" type="string">
+			<column name="showtime" length="50" />
+		</property>
+
+	</class>
+</hibernate-mapping>

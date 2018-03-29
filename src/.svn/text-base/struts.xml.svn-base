@@ -1,0 +1,419 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.5//EN"
+    "http://struts.apache.org/dtds/struts-2.5.dtd">
+
+<struts>
+	<include file="struts-default.xml"></include>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<constant name="struts.enable.DynamicMethodInvocation" value="true" /><!--
+ 
+     设置struts2文件上传最大值  //在MyMultipartRequest中还有一个 38行
+    <constant name="struts.multipart.maxSize" value="2000000000" />
+ 	
+ 	 文件上传临时文件保存路径 
+    <bean type="org.apache.struts2.dispatcher.multipart.MultiPartRequest"
+     name="requestParser" class="action.MyMultipartRequest" scope="default" optional="true"/>
+     改成自己定义的文件上传方式 
+    <constant name="struts.multipart.handler" value="requestParser" />
+    
+ 
+	
+	--><package name="tuji" extends="json-default">
+		<global-allowed-methods>regex:.*</global-allowed-methods>
+ 		<action name="zhifu" class="action.zhifuAction">
+ 		</action>
+ 		
+ 		<action name="order" class="action.OrderAction">
+ 			<result type="redirectAction" name="index">index!index.action</result>
+ 			<result type="redirectAction" name="thecourse">course!thecourse.action</result>
+ 			<result name="pay">pay.jsp</result>
+ 			<result name="realzhuce">realzhuce.jsp</result>
+			<result name="kcorder">kcorder.jsp</result>
+			<result name="myorder">myorder.jsp</result>
+			
+			<result name="jsonresult" type="json">
+				<param name="root">jsonresult</param>
+			</result>
+			
+			
+			
+			
+			<result name="allkc">/admin/order/allkcorder.jsp</result>
+			<result name="all">/admin/order/allorder.jsp</result>
+			<result name="allpay">/admin/order/allpay.jsp</result>
+			<result name="allfh">/admin/order/allfh.jsp</result>
+			<result name="toorder">/admin/order/order.jsp</result>
+			<result name="tofahuo">/admin/order/fahuo.jsp</result>
+			<result name="order11">/admin/order/order11.jsp</result>
+			<result name="order22">/admin/order/order22.jsp</result>
+			<result name="fxorder">/admin/seller/fxorder.jsp</result>
+			<result name="theorder">/admin/order/order.jsp</result>
+			
+			<result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+			
+			<!-- 我的订单 -->
+			<result name="findAllOrder3">teamFindAllOrder3.jsp</result>		
+		</action>
+ 		
+ 		<action name="index" class="action.IndexAction">
+ 			<result name="index">/index.jsp</result>
+ 			<result name="homepage">homepage.jsp</result>
+ 		</action>
+ 		
+ 		<action name="progress" class="action.FileProgressAction">
+	        <result name="success" type="json">
+				<param name="root">state</param>
+			</result>
+	    </action>
+	    <action name="uploadfile" class="action.UploadAction">
+	        <result name="success" type="json">
+				<param name="root">file</param>
+			</result>
+	 	</action>
+ 		
+ 		<action name="sms" class="action.SmsAction">
+ 			<result name="json_msg" type="json">
+ 				<param name="root">msg</param>
+ 			</result>
+ 			<result name="find">/admin/admin/sms.jsp</result>
+ 		</action>
+ 		
+ 		
+		<action name="peizhi" class="action.PeizhiAction">
+			<result name="success">/admin/weixin/peizhi.jsp</result>
+			<result name="peizhi">/admin/weixin/peizhi.jsp</result>
+		</action>
+
+		<action name="weixinpay" class="action.WeixinpayAction">
+			<result name="success">/admin/weixin/weixinpay.jsp</result>
+		</action>
+
+
+		<action name="team" class="action.TeamAction">
+			<result name="all">/admin/user/allUser.jsp</result>
+			<result name="toUpdate">/admin/user/update.jsp</result>
+			<result name="toUser">/admin/user/user.jsp</result>
+			<result name="toUserPayRecord">/admin/user/payRecord.jsp</result>
+			<result name="toAward">/admin/user/toAward.jsp</result>
+			<result name="index">homepage.jsp</result>
+			<result name="zhifu4">zhifu4.jsp</result>
+			<result name="findxiaji">/admin/user/findxiaji.jsp</result>
+			<result name="yongjinaward">/admin/user/yongjinAward.jsp</result>
+			<result name="alltixian">/admin/order/alltixian.jsp</result>
+			<result name="updatefenxiao">/admin/user/fenxiao.jsp</result>
+			
+			<result name="fenxiao">fenxiao.jsp</result>
+			
+			<result name="toInfo">info.jsp</result>
+			<result name="fafang">/admin/user/fafang.jsp</result>
+			<result name="fafang2">/admin/user/fafang2.jsp</result>
+			<result name="ziliao">ziliao.jsp</result>
+			<result name="alljudge">alljudge.jsp</result>
+			<result name="mypoint">mypoint.jsp</result>
+			
+			<result name="xiugaitj">/admin/user/xiugaitj.jsp</result>
+			<result name="looktj">/admin/user/looktj.jsp</result>
+			
+			<result name="xiugai">xiugai.jsp</result>
+			<result name="wangjimima">wangjimima.jsp</result>
+			<result name="json_huoqu" type="json">
+				<param name="root">jsonresult</param>
+			</result>
+			<result name="jsonresult" type="json">
+				<param name="root">jsonresult</param>
+			</result>
+			<result name="resMsg" type="json">
+				<param name="root">team</param>
+			</result>
+			
+			<!-- 个人中心 -->
+			
+			<result name="toCenter">yonghu.jsp</result> 
+			<result name="point">/point.jsp</result>
+			<result name="yongjin">/yongjin.jsp</result>
+			<result name="group">/group.jsp</result>  
+			<result name="group1">/group1.jsp</result>
+			<result name="collect">/collect.jsp</result>  
+			
+			
+			<!-- 修改个人资料 -->
+			<result name="gerenziliaoupdate">gerenziliaoupdate.jsp</result>
+			
+			<!-- 我的订单 -->
+			<result name="findAllOrder3">teamFindAllOrder3.jsp</result>		
+			
+			<result name="json_order3s" type="json">
+				<param name="root">order3s</param>
+			</result>
+			
+			<!-- 全部内容 -->
+			<result name="myAllPay">teamAllPay.jsp</result>
+			
+			<!-- 个人的课程 -->
+			<result name="allOrder3">teamAllOrder3.jsp</result> 
+			
+			<!--个人商品  -->
+			<result name="allOrder2">teamAllOrder2.jsp</result> 
+			<result name="findOrder2">teamOrder2.jsp</result>
+			
+			<result name="json_order2s" type="json">
+				<param name="root">order2s</param>
+			</result>
+			
+			<!-- 我的消费记录 -->
+			<result name="payRecord">teamPayRecord.jsp</result>
+			
+			<result name="payRecords" type="json">
+				<param name="root">payRecords</param>
+			</result>
+			
+			<!-- 收藏 -->
+			<result name="teamCollect">teamAllCollect.jsp</result>
+			<result name="thezixun">thezixun.jsp</result>
+			<result name="kcthecourse0">kcthecourse0.jsp</result>
+			
+			<result name="teamCollects" type="json">
+				<param name="root">collects</param>
+			</result>
+			
+			<!-- 二维码 -->
+			<result name="erweima">teamErWeiMa.jsp</result>
+			<!-- 上下级 -->
+			<result name="teamCompany">teamCompany.jsp</result>
+			<!-- 积分奖励 -->
+			<result name="teamAward">teamAwards.jsp</result>
+			<result name="teamAwards" type="json">
+				<param name="root">teamAwards</param>
+			</result>
+			
+						
+			<!-- 登录页面 -->
+			<result name="login">login.jsp</result>
+			<!-- 注册页面 -->
+			<result name="index">/index.jsp</result>
+			<result name="realzhuce">/realzhuce.jsp</result>
+			
+			
+			
+            <result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+			<result name="json_datas" type="json">
+				<param name="root">datas</param>
+			</result>
+		</action>
+		
+		
+		<action name="aboutus" class="action.AboutUsAction">
+			<result name="all">/admin/aboutus/allnews.jsp</result>
+			<result name="toUpdate">/admin/aboutus/update.jsp</result>
+			<result name="index">index.jsp</result>
+			<result name="aboutus">aboutus.jsp</result>
+            <result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+			<result name="json_datas" type="json">
+				<param name="root">datas</param>
+			</result>
+		</action>
+		
+		<action name="banner" class="action.BannerAction">
+			<result name="banner">/admin/banner/banner.jsp</result>
+			<result name="hdbanner">/admin/banner/hdbanner.jsp</result>
+			<result name="xiugai">/admin/banner/xiugaihd.jsp</result>
+			
+			<result name="thehuodong">thehuodong.jsp</result>
+			
+			
+			
+		</action>
+		
+		<action name="admin" class="action.AdminAction">
+			<result name="all">/admin/admin/alladmin.jsp</result>
+			<result name="toAdmin">/admin/admin/admin.jsp</result>
+			<result name="toUpdate">/admin/admin/update.jsp</result>
+			<result name="success">/admin/index.jsp</result>
+			<result name="fail">/admin/login.jsp</result>
+			<result name="shezhi">/admin/admin/shezhi.jsp</result>
+			<result name="tologin">/admin/login.jsp</result>
+			<result name="chenggong">/WEB-INF/login.jsp</result>
+			<result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+			
+			<result name="jsonresult" type="json">
+				<param name="root">jsonresult</param>
+			</result>
+		</action>
+		
+		<action name="menu" class="action.MenuAction">
+			<result name="success">/admin/weixin/weixin.jsp</result>
+		</action>
+		
+		<action name="point" class="action.PointAction">
+			<result name="point">/admin/shezhi/point.jsp</result>
+		</action>
+		
+		<action name="yunfei" class="action.YunfeiAction">
+			<result name="all">/admin/order/yunfei.jsp</result>
+			<result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+		</action>
+		
+		
+		<action name="classify" class="action.ClassifyAction">
+			<result name="classify">/admin/product/classify.jsp</result>
+			<result name="toindex">allclassify.jsp</result>
+			<result name="toindex2">allclassify2.jsp</result>
+			<result name="index">index.jsp</result>
+			
+			<result name="shangchengclassify">shangchengclassify.jsp</result>
+			
+            <result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+            <result name="json" type="json">
+				<param name="root">classifys</param>
+			</result>
+			<result name="json_datas" type="json">
+				<param name="root">datas</param>
+			</result>
+		</action>
+		
+		
+		<action name="address" class="action.AddressAction">
+			<result name="allIndex">address.jsp</result>
+			<result name="toupdate">updateAdd.jsp</result>
+			<result name="detailIndex">news.jsp</result>
+			<result name="index">index.jsp</result>
+            <result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+			<result name="json_datas" type="json">
+				<param name="root">datas</param>
+			</result>
+		</action>
+		
+		<action name="notify1" class="action.Notify1Action">
+            <result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+			<result name="json_datas" type="json">
+				<param name="root">datas</param>
+			</result>
+		</action>
+
+
+		<!-- 奖励 -->
+		<action name="award" class="action.AwardAction">
+			<result name="find">/admin/user/award.jsp</result>
+			<result name="updateMoney">/admin/user/teamMoney.jsp</result>
+		
+		</action>
+		
+		<!-- 课程 -->
+		<action name="course" class="action.CourseAction">
+		
+			<result name="login">login.jsp</result>
+			<result name="json_courses" type="json">
+				<param name="root">courses</param>
+			</result>
+			<result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+			
+			<result name="allcourse">allcourse.jsp</result>
+			
+			<!-- 课程详情 -->
+			<result name="thecourse">thecourse.jsp</result>
+			
+			<!-- 搜索 -->
+			<result name="sousuo">sousuo.jsp</result>
+			<result name="sousuo2">sousuo2.jsp</result>
+			
+			<!-- 课程内容 -->
+			<result name="adminclassify2">/admin/Course/classify2.jsp</result>
+			
+			<result name="findAllCourse">/admin/Course/allCourse.jsp</result>
+			<result name="toCourse">/admin/Course/course.jsp</result>
+			<result name="toAddCourse">/admin/Course/addCourse.jsp</result>
+			<result name="toUpdateCourse">/admin/Course/updateCourse.jsp</result>
+			
+			<!-- 课时内容 -->
+			<result name="allcontent">/admin/Course/allContent.jsp</result>
+			<result name="addcontent">/admin/Course/addcontent.jsp</result>
+			
+			<result name="findContent">/admin/Course/content.jsp</result>
+			<result name="updateContent">/admin/Course/updateContent.jsp</result>
+			
+			<!-- 套餐内容 -->
+			<result name="totaocan">taocan.jsp</result>
+			<result name="addtaocan">/admin/Course/addtaocan.jsp</result>
+			<result name="alltaocan">/admin/Course/alltaocan.jsp</result>
+			<result name="thetaocan">/admin/Course/taocan.jsp</result>
+			<result name="updatetaocan">/admin/Course/updatetaocan.jsp</result>
+			
+			
+			<!-- 课时评论 -->
+			<result name="allcomment">/admin/Course/allcomment.jsp</result>
+			
+			
+		</action>
+		
+		
+		<!-- 讲师 -->
+		<action name="teacher" class="action.TeacherAction">
+			<result name="kcteacher">kcteacher.jsp</result>
+			<result name="kctuijian">kctuijian1.jsp</result>
+			<result name="findAllTeacher">/admin/teacher/allTeacher.jsp</result>
+			<result name="theteacher">/admin/teacher/teacher.jsp</result>
+			<result name="update">/admin/teacher/update.jsp</result>
+			
+		</action>
+		
+		<action name="yewu" class="action.YewuAction">
+			<result name="add">/admin/yewu/addyewu.jsp</result>
+			<result name="find">/admin/yewu/find.jsp</result>
+			<result name="xiugai">/admin/yewu/xiugai.jsp</result>
+			<result name="look">/admin/yewu/yewu.jsp</result>
+			<result name="jsonresult" type="json">
+				<param name="root">jsonresult</param>
+			</result>
+		</action>
+		
+		<action name="sb" class="action.SbAction">
+			<result name="json_msg" type="json">
+				<param name="root">msg</param>
+			</result>
+			<result name="find">/admin/sb/sbfenlei.jsp</result> 
+			<result name="look">/admin/sb/lookfenlei.jsp</result> 
+			<result name="find1">/admin/sb/sb.jsp</result> 
+			<result name="add1">/admin/sb/addsb.jsp</result> 
+			<result name="look1">/admin/sb/looksb.jsp</result> 
+			<result name="xiugai">/admin/sb/xiugai.jsp</result> 
+			<result name="jsonresult" type="json">
+				<param name="root">jsonresult</param>
+			</result>
+		</action>
+		
+		<action name="article" class="action.ArticleAction">
+			
+			<result name="find">/admin/article/find.jsp</result> 
+			<result name="look">/admin/article/look.jsp</result> 
+			<result name="xiugai">/admin/article/xiugai.jsp</result>
+			<result name="findguize">/admin/article/add1.jsp</result>
+			<result name="jsonresult" type="json">
+				<param name="root">jsonresult</param>
+			</result>
+			
+		</action>
+		
+		
+		
+	</package>
+</struts>
+

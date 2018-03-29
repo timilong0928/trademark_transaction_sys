@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping package="pojo"> 
+
+<class name="Post" table="post" catalog="shangbiao18"> 
+
+<id name="id" type="integer"> 
+<column name="id" /> 
+<generator class="native"></generator> 
+</id> 
+
+<property name="title" type="string"> 
+<column name="title" length="100"  /> 
+</property> 
+<property name="writer" type="string"> 
+<column name="writer" length="100"  /> 
+</property> 
+<property name="head" type="string"> 
+<column name="head" length="200"  /> 
+</property> 
+
+<property name="img" type="string"> 
+<column name="img" length="150"  /> 
+</property>
+
+<property name="time" type="string"> 
+<column name="time" length="100"  /> 
+</property> 
+
+<property name="content" type="text"> 
+<column name="content"  /> 
+</property> 
+
+
+<property name="readnum" type="integer"> 
+<column name="readnum"  /> 
+</property>
+<property name="collectnum" type="integer"> 
+<column name="collectnum"  /> 
+</property>
+<property name="likenum" type="integer"> 
+<column name="likenum"  /> 
+</property>
+<property name="tuijian" type="integer"> 
+<column name="tuijian"  /> 
+</property>
+       </class> 
+       </hibernate-mapping>

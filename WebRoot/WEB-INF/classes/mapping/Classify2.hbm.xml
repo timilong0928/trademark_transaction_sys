@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd"> 
+
+<hibernate-mapping package="pojo"> 
+	<class name="Classify2" table="Classify2" catalog="shangbiao18"> 
+	
+	<id name="id" type="integer"> 
+	<column name="id" /> 
+	<generator class="native"></generator> 
+	</id> 
+	
+	<property name="name" type="string"> 
+	<column name="name" length="100"  /> 
+	</property> 
+	<property name="orderid" type="integer"> 
+	<column name="orderid"  /> 
+	</property> 
+	<property name="img" type="string"> 
+	<column name="img" length="300"  /> 
+	</property> 
+	<property name="img2" type="string"> 
+	<column name="img2" length="300"  /> 
+	</property> 
+	<property name="type" type="integer"> 
+	<column name="type"  /> 
+	</property> 
+
+		
+	</class> 
+</hibernate-mapping>

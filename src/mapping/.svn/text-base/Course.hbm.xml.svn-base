@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Course" table="course" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		
+		<property name="title" type="string">
+			<column name="title" length="100" />
+		</property>
+		<property name="details" type="text">
+			<column name="details"  />
+		</property>
+		
+		<property name="introduce" type="text">
+			<column name="introduce"  />
+		</property>
+
+
+		<property name="status" type="integer">
+			<column name="status" />
+		</property>
+		
+
+
+
+		<property name="teacher" type="string">
+			<column name="teacher" length="300" />
+		</property>
+		<property name="teacherId" type="integer">
+			<column name="teacherId" />
+		</property>
+
+		<property name="classify2id" type="integer">
+			<column name="classify2id" />
+		</property>
+		
+		<property name="time" type="string">
+			<column name="time" length="50" />
+		</property>
+
+		<property name="img" type="string">
+			<column name="img" length="300" />
+		</property>
+
+
+		<property name="money" type="double">
+			<column name="money" />
+		</property>
+		<property name="twomoney" type="double">
+			<column name="twomoney" />
+		</property>
+
+		<property name="payNum" type="integer">
+			<column name="paynum" />
+		</property>
+		
+		<property name="readNum" type="integer">
+			<column name="readnum" />
+		</property>
+		
+		<property name="collectnum" type="integer">
+			<column name="collectnum" />
+		</property>
+		
+		<property name="period" type="integer">
+			<column name="period" />
+		</property>
+	
+	</class>
+</hibernate-mapping>

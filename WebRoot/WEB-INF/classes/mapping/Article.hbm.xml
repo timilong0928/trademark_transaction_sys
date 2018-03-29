@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Article" table="article" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="img" type="string">
+			<column name="img" />
+		</property>
+		
+		<property name="title" type="string">
+			<column name="title" />
+		</property>
+		
+		<property name="content" type="text">
+			<column name="content" />
+		</property>
+		
+		<property name="time" type="string">
+			<column name="time" />
+		</property>
+		
+		<property name="state" type="integer">
+			<column name="state" length="10" />
+		</property>
+		
+		<property name="teamid" type="integer">
+			<column name="teamid" />
+		</property>
+		
+		
+
+		
+		
+
+
+	</class>
+</hibernate-mapping>

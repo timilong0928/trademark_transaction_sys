@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Content" table="content" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+
+		<property name="courseId" type="integer">
+			<column name="courseId" />
+		</property>
+		
+		<property name="title" type="string">
+			<column name="title" length="100" />
+		</property>
+
+		<property name="content1" type="text">
+			<column name="content1"></column>
+		</property>
+		
+		<property name="isTest" type="integer">
+			<column name="istest" />
+		</property>
+		
+		<property name="seq" type="integer">
+			<column name="seq" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

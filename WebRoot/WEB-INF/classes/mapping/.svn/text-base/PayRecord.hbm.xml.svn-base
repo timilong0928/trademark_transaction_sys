@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="PayRecord" table="payrecord" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="teamid" type="integer">
+			<column name="teamid" />
+		</property>
+		
+		<property name="num" type="integer">
+			<column name="num" />
+		</property>
+		
+		<property name="style" type="integer">
+			<column name="style" />
+		</property>
+
+		<property name="pay" type="integer">
+			<column name="pay" />
+		</property>
+		
+		
+		<property name="time" type="string">
+			<column name="time" length="300"/>
+		</property>
+		
+		<property name="yjpay" type="double">
+			<column name="yjpay" />
+		</property>
+		
+		<property name="jfcontent" type="string">
+			<column name="jfcontent" length="300"/>
+		</property>
+		
+		<property name="yjcontent" type="string">
+			<column name="yjcontent" length="300"/>
+		</property>
+		
+		<property name="status" type="integer">
+			<column name="status" />
+		</property>
+		
+		<property name="name" type="string">
+			<column name="name" length="100" />
+		</property>
+		<property name="kahao" type="string">
+			<column name="kahao" length="100" />
+		</property>
+		<property name="yinghang" type="string">
+			<column name="yinghang" length="100" />
+		</property>
+
+
+	</class>
+</hibernate-mapping>

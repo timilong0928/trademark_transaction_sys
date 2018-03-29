@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="TeamAward" table="teamaward" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+
+		<property name="point" type="integer">
+			<column name="point" />
+		</property>
+		
+		<property name="type" type="integer">
+			<column name="type" />
+		</property>
+		
+		<property name="teamId" type="integer">
+			<column name="teamId" />
+		</property>
+		
+		<property name="teamId1" type="integer">
+			<column name="teamid1" />
+		</property>
+		
+		<property name="courseId" type="integer">
+			<column name="courseid" />
+		</property>
+
+		<property name="postId" type="integer">
+			<column name="postId" />
+		</property>
+
+		<property name="time" type="string">
+			<column name="time" length="30" />
+		</property>
+		
+		<property name="fanyongname" type="string">
+			<column name="fanyongname" length="50" />
+		</property>
+		
+		<property name="yongjinaward" type="double">
+			<column name="yongjinaward" />
+		</property>
+		
+		<property name="yjcontent" type="string">
+			<column name="yjcontent" length="300" />
+		</property>
+		
+		
+
+	</class>
+</hibernate-mapping>

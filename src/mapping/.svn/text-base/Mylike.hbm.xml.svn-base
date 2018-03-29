@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Mylike" table="Mylike" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="teamid" type="integer">
+			<column name="teamid" />
+		</property>
+
+		<property name="type" type="integer">
+			<column name="type" />
+		</property>
+		
+		<property name="likeid" type="integer">
+			<column name="likeid" />
+		</property>
+		
+	</class>
+</hibernate-mapping>

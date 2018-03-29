@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Team" table="team" catalog="shangbiao18" dynamic-update="true">
+		
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		<property name="appid" type="string">
+			<column name="appid" length="100" />
+		</property>
+		
+		<property name="companyId" type="integer">
+			<column name="companyid" />
+		</property>
+		
+		<property name="num" type="integer">
+			<column name="num" />
+		</property>
+		
+		<property name="openId" type="string">
+			<column name="openid" length="500" />
+		</property>
+		
+		<property name="userName" type="string">
+			<column name="userName" length="20"></column>
+		</property>
+		
+		<property name="pwd" type="string">
+			<column name="pwd" length="16"></column>
+		</property>
+
+		<property name="img" type="string">
+			<column name="img" length="500" />
+		</property>
+
+		<property name="nickName" type="string">
+			<column name="nickname" length="500" />
+		</property>
+		
+		<property name="rname" type="string">
+			<column name="rname" length="50"></column>
+		</property>
+
+		<property name="sex" type="integer">
+			<column name="sex" />
+		</property>
+		
+		<property name="birthDay" type="string">
+			<column name="birthDay" length="20"></column>
+		</property>
+		
+		<property name="province" type="string">
+			<column name="province" length="20"></column>
+		</property>
+		
+		<property name="city" type="string">
+			<column name="city" length="100" />
+		</property>
+		
+		<property name="area" type="string">
+			<column name="area" length="100" />
+		</property>
+		
+		<property name="address" type="string">
+			<column name="address" length="100"/>
+		</property>
+		
+		<property name="endTime" type="string">
+			<column name="endTime" length="50"></column>
+		</property>
+
+        <property name="regTime" type="string">
+			<column name="regTime" length="50"></column>
+		</property>
+		
+		<property name="email" type="string">
+			<column name="email" length="50"></column>
+		</property>
+
+		<property name="phone" type="string">
+			<column name="phone" length="100"/>
+		</property>
+		
+		<property name="isJudge" type="integer">
+			<column name="isjudge"></column>
+		</property>
+		
+		<property name="isReject" type="integer">
+			<column name="isreject"></column>
+		</property>
+		
+		<property name="reason" type="string">
+			<column name="reason" length="500"></column>
+		</property>
+		
+		<property name="isForbid" type="integer">
+			<column name="isforbid"></column>
+		</property>
+		
+		
+		<property name="memberdj" type="integer">
+			<column name="memberdj"></column>
+		</property>
+		
+		<property name="companyName" type="string">
+			<column name="companyName" length="500"></column>
+		</property>
+		
+		<property name="yijiId" type="integer">
+			<column name="yijiId"></column>
+		</property>
+		
+		<property name="allyongjin" type="double">
+			<column name="allyongjin"></column>
+		</property>
+		
+		<property name="yongjin" type="double">
+			<column name="yongjin"></column>
+		</property>
+		
+		
+		<property name="yijiname" type="string">
+			<column name="yijiname" length="500"></column>
+		</property>
+		
+		
+	
+		<property name="hctime" type="long">
+			<column name="hctime" ></column>
+		</property>
+		
+		<property name="ticket" type="string">
+			<column name="ticket" length="500"></column>
+		</property>
+		
+		<property name="tuijian" type="text">
+			<column name="tuijian" ></column>
+		</property>
+		
+		<property name="istj" type="integer">
+			<column name="istj"></column>
+		</property>
+		
+		<property name="erweimapath" type="string">
+			<column name="erweimapath" length="500"></column>
+		</property>
+		
+		<property name="isfanyong" type="integer">
+			<column name="isfanyong" />
+		</property>
+		
+		
+	</class>
+</hibernate-mapping>

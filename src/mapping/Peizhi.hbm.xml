@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+
+	<class name="Peizhi" table="peizhi" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="appid" type="string">
+			<column name="appid" length="100" />
+		</property>
+
+		<property name="appsecret" type="string">
+			<column name="appsecret" length="100" />
+		</property>
+		
+		
+		<property name="wx_appid" type="string">
+			<column name="wx_appid" length="100" />
+		</property>
+
+		<property name="wx_appsecret" type="string">
+			<column name="wx_appsecret" length="100" />
+		</property>
+		<property name="qq_appid" type="string">
+			<column name="qq_appid" length="100" />
+		</property>
+
+		<property name="qq_appsecret" type="string">
+			<column name="qq_appsecret" length="100" />
+		</property>
+		
+		<property name="partner" type="string">
+			<column name="partner" length="100" />
+		</property>
+
+		<property name="partnerkey" type="string">
+			<column name="partnerkey" length="100" />
+		</property>
+		<property name="zfbpartner" type="string">
+			<column name="zfbpartner" length="100" />
+		</property>
+
+		<property name="zfbpartnerkey" type="string">
+			<column name="zfbpartnerkey" length="100" />
+		</property>
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+	
+	</class>
+</hibernate-mapping>

@@ -1,0 +1,155 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/code/!svn/ver/15322/shangbiao18/src/dao
+END
+TeacherDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/TeacherDao.java
+END
+NewsDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/NewsDAO.java
+END
+TalPhotosDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/TalPhotosDAO.java
+END
+DAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/code/!svn/ver/15322/shangbiao18/src/dao/DAO.java
+END
+ProductDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/ProductDAO.java
+END
+CollectDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/CollectDAO.java
+END
+AddressDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/AddressDAO.java
+END
+TeamDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/code/!svn/ver/12810/shangbiao18/src/dao/TeamDAO.java
+END
+PayRecordDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/PayRecordDAO.java
+END
+AdminDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/AdminDAO.java
+END
+PeizhiDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/PeizhiDAO.java
+END
+CartDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/CartDAO.java
+END
+TongjiDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/TongjiDAO.java
+END
+MylikeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/MylikeDAO.java
+END
+TalkDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/TalkDAO.java
+END
+Order1DAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/Order1DAO.java
+END
+ProPhotosDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/ProPhotosDAO.java
+END
+Order2DAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/13855/shangbiao18/src/dao/Order2DAO.java
+END
+CourseDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/CourseDao.java
+END
+HibernateDao.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/HibernateDao.java
+END
+CommentDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/CommentDAO.java
+END
+TeamAwardDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/TeamAwardDAO.java
+END
+BannerDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/BannerDAO.java
+END
+BackTalkPhotosDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/BackTalkPhotosDAO.java
+END
+CodeDAO.java
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/code/!svn/ver/12478/shangbiao18/src/dao/CodeDAO.java
+END

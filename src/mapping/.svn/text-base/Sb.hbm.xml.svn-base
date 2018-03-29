@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Sb" table="sb" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="price" type="double">
+			<column name="price" />
+		</property>
+		
+		<property name="title" type="string">
+			<column name="title" />
+		</property>
+		
+		<property name="img" type="string">
+			<column name="img" />
+		</property>
+		
+		<property name="fenleiid" type="integer">
+			<column name="fenleiid" />
+		</property>
+		
+		<property name="biaohao" type="string">
+			<column name="biaohao" />
+		</property>
+		
+		<property name="time" type="string">
+			<column name="time" />
+		</property>
+		
+		<property name="leixing" type="string">
+			<column name="leixing" />
+		</property>
+		
+		<property name="jieshao" type="string">
+			<column name="jieshao" />
+		</property>
+		
+		<property name="state" type="integer">
+			<column name="state" />
+		</property>
+		
+		<property name="xiaoxiang" type="double">
+			<column name="xiaoxiang" />
+		</property>
+		
+		<property name="qunzu" type="string">
+			<column name="qunzu" />
+		</property>
+		
+		<property name="fenleiname" type="string">
+			<column name="fenleiname" />
+		</property>
+		
+
+		
+		
+
+
+	</class>
+</hibernate-mapping>

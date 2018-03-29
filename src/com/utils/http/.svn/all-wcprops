@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 55
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/http
+END
+HttpResultType.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/http/HttpResultType.java
+END
+TrustAnyTrustManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 81
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/http/TrustAnyTrustManager.java
+END
+HttpRequest.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/http/HttpRequest.java
+END
+MySSLSocketFactory.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/http/MySSLSocketFactory.java
+END
+HttpClientConnectionManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/http/HttpClientConnectionManager.java
+END
+HttpResponse.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/http/HttpResponse.java
+END

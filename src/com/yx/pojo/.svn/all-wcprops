@@ -1,0 +1,77 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo
+END
+PersonalInf.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/PersonalInf.java
+END
+WeixinGroup.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/WeixinGroup.java
+END
+AccessToken.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/AccessToken.java
+END
+ComplexButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/ComplexButton.java
+END
+CommonButton.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/CommonButton.java
+END
+Menu.java
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/Menu.java
+END
+WeixinOauth2Token.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/WeixinOauth2Token.java
+END
+MessageTransInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/MessageTransInfo.java
+END
+KKTransInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/KKTransInfo.java
+END
+Button.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/Button.java
+END
+SNSUserInfo.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/SNSUserInfo.java
+END
+WeixinUserList.java
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/pojo/WeixinUserList.java
+END

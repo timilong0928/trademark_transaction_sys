@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util
+END
+BeanCopy.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/BeanCopy.java
+END
+WeixinUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/WeixinUtil.java
+END
+MessageUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/MessageUtil.java
+END
+DBUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/DBUtil.java
+END
+GetPersoninf.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/GetPersoninf.java
+END
+MyX509TrustManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/MyX509TrustManager.java
+END
+SendCustomMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/SendCustomMessage.java
+END
+GetUserList.java
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/GetUserList.java
+END
+GroupUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/GroupUtil.java
+END
+MakeCustomMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/MakeCustomMessage.java
+END
+OAuthUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/OAuthUtil.java
+END
+SignUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/SignUtil.java
+END
+XmlHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/util/XmlHandler.java
+END

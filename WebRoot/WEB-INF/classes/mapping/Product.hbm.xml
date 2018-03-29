@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Product" table="product" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="code" type="string">
+			<column name="code" length="50" />
+		</property>
+		
+		<property name="title" type="string">
+			<column name="title" length="50" />
+		</property>
+		
+		
+		<property name="price" type="integer">
+			<column name="price"/>
+		</property>
+
+		<property name="time" type="string">
+			<column name="time" length="50" />
+		</property>
+		
+
+		<property name="img" type="text">
+			<column name="img" />
+		</property>
+		
+		<property name="point" type="integer">
+			<column name="point" />
+		</property>
+		
+		<property name="isUp" type="integer">
+			<column name="isUp" />
+		</property>
+		
+		
+		<property name="content" type="text">
+			<column name="content" />
+		</property>
+		
+		<property name="stockNum" type="integer">
+			<column name="stockNum" />
+		</property>
+		<property name="pageView" type="integer">
+			<column name="pageView" />
+		</property>
+		<property name="buyNum" type="integer">
+			<column name="buyNum" />
+		</property>
+		<property name="shoucang" type="integer">
+			<column name="shoucang" />
+		</property>
+		<property name="tuiJian" type="integer">
+			<column name="tuiJian" />
+		</property>
+
+		<property name="status" type="integer">
+			<column name="status" />
+		</property>
+		<property name="rank" type="integer">
+			<column name="rank" />
+		</property>
+		
+		<property name="type" type="string">
+			<column name="type" length="50" />
+		</property>
+		<property name="typeId" type="integer">
+			<column name="typeid" />
+		</property>
+		<property name="type1" type="string">
+			<column name="type1" length="50" />
+		</property>
+		<property name="type1Id" type="integer">
+			<column name="type1id" />
+		</property>
+
+
+	</class>
+</hibernate-mapping>

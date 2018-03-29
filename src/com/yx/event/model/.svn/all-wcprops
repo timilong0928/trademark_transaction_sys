@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/event/model
+END
+QRCodeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/event/model/QRCodeEvent.java
+END
+BasicEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/event/model/BasicEvent.java
+END
+SubscribeEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 79
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/event/model/SubscribeEvent.java
+END
+MenuEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/event/model/MenuEvent.java
+END
+LocationEvent.java
+K 25
+svn:wc:ra_dav:version-url
+V 78
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/event/model/LocationEvent.java
+END

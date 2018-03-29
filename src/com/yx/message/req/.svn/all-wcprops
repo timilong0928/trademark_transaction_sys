@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/message/req
+END
+BaseMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/message/req/BaseMessage.java
+END
+LinkMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/message/req/LinkMessage.java
+END
+ImageMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/message/req/ImageMessage.java
+END
+TextMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/message/req/TextMessage.java
+END
+VoiceMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 77
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/message/req/VoiceMessage.java
+END
+LocationMessage.java
+K 25
+svn:wc:ra_dav:version-url
+V 80
+/svn/code/!svn/ver/12478/shangbiao18/src/com/yx/message/req/LocationMessage.java
+END

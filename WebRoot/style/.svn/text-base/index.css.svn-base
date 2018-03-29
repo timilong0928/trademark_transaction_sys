@@ -1,0 +1,53 @@
+/*搜索*/
+.search{ border: 1px solid #e0e0e0; border-radius: 1.5rem; padding: 0.2rem 0.5rem; margin-top: 1rem; margin-bottom: 1rem; overflow: hidden;}
+.search .search_btn{background: none; border: none; width: 10%; height: 2.5rem; color: #c2c2c2; float: left; text-align: left;}
+.search .search_btn i{ font-size: 1.4rem;}
+.search .search_txt{ width: 90%; border:none; font-size: 1.2rem;float: right; margin-top:5px;}
+/*导航*/
+.idx_nav li{float: left; width: 33.333%; text-align:center;}
+.idx_nav li a{font-size: 1.5rem; border-bottom: 2px solid #FFF; display: inline-block; height: 3.5rem; line-height: 3.5rem;}
+.idx_nav .current a{ border-bottom: 2px solid #d63535;}
+/*分类*/
+.idx_cls{padding: 2rem 0;}
+.idx_cls .idx_cls_col{width:25%; text-align: center; float: left;}
+.idx_cls .idx_cls_col span{display: block;font-size: 1.5rem; margin-top:0.8rem;}
+.idx_cls .idx_cls_col i{font-size: 3rem;}
+/*快捷链接*/
+.kj_table{background: #FFF; width: 100%; margin-top: 1rem; border-collapse: collapse;}
+.kj_table td{border: 1px solid #f0f0f0;}
+.kj_table td a{display: block; overflow: hidden;padding: 15px;}
+.kj_table td a img{display: block;}
+.kj_table td a:hover span{color: #333;}
+.kj_table td .kj_link_txt{float: left;}
+.kj_table td .kj_link_txt h3{color: #d63535;font-size: 1.5rem;}
+.kj_table td .kj_link_txt span{font-size: 1.2rem; display: block; margin-top: 1rem;}
+.kj_table td .kj_link_txt em{margin-top: 0.8rem;display: block;}
+.kj_table td .kj_link_txt em img{width: 2.4rem;}
+.idx_tu01 img{width:8rem;}
+.idx_tu02 img{width:5rem;}
+.idx_tu03 img{width:3.4rem;}
+.idx_tu04 img{width:4rem;}
+.idx_tu05 img{width: 7.7rem;}
+/*免费专区*/
+.idx_mf{background: #FFF; margin-top: 1rem; padding:10px 15px;}
+.idx_mf_title{ overflow: hidden; padding: 1rem 0; text-align: center;}
+.idx_mf_title i{font-size:1rem;}
+.idx_mf_title span{ font-size:1.5rem; margin: 0px 0.8rem;}
+.idx_list01{margin: 0.5rem 0 ;}
+.idx_list01 li{ overflow: hidden; border-bottom: 1px solid #e8e8e8; padding-bottom: 1rem; margin-bottom: 1rem;}
+.idx_list01 li span{display: block; float: left; width:25%;}
+.idx_list01 li span img{width: 100%; display: block;}
+.idx_list01 li samp{display: block; padding-left: 1.5rem; width:75%; float: right; margin-top: 0.5rem;}
+.idx_list01 li samp h3 a{ display: block; font-size: 1.4rem;}
+.idx_list01 li samp p{color: #8a8a8a; font-size:1.3rem; margin-top: 0.5rem; line-height:2rem;}
+
+
+
+
+
+
+
+
+
+
+

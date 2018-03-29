@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Banner" table="banner" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+
+		<property name="orderid" type="integer">
+			<column name="orderid" />
+		</property>
+
+		<property name="img" type="string">
+			<column name="img" length="300" />
+		</property>
+
+		<property name="link" type="string">
+			<column name="link" length="300" />
+		</property>
+		
+		<property name="hdMoney" type="double">
+			<column name="hdMoney" length="300" />
+		</property>
+		
+		<property name="hdcontent" type="text">
+			<column name="hdcontent"  />
+		</property>
+		
+		<property name="hdtitle" type="string">
+			<column name="hdtitle" length="300" />
+		</property>
+		
+		<property name="hdtime" type="string">
+			<column name="hdtime" length="300" />
+		</property>
+		
+		
+
+	</class>
+</hibernate-mapping>

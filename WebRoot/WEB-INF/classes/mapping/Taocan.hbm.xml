@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+
+	<class name="Taocan" table="Taocan" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="name" type="string">
+			<column name="name" length="100" />
+		</property>
+
+		<property name="img" type="string">
+			<column name="img" length="100" />
+		</property>
+		
+		<property name="money" type="double">
+			<column name="money"  />
+		</property>
+		
+		<property name="twomoney" type="double">
+			<column name="twomoney"  />
+		</property>
+		
+		<property name="courseids" type="string">
+			<column name="courseids" length="300" />
+		</property>
+		
+		<property name="payNum" type="integer">
+			<column name="payNum"  />
+		</property>
+		
+		<property name="time" type="string">
+			<column name="time" length="30" />
+		</property>
+		
+		<property name="introduce" type="text">
+			<column name="introduce"  />
+		</property>
+		
+		
+		
+		
+
+	</class>
+</hibernate-mapping>

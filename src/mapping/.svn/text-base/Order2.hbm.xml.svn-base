@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+
+	<class name="Order2" table="order2" catalog="shangbiao18">
+		<id name="id" type="integer">
+			<column name="id" length="11"/>
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="teamid" type="integer">
+			<column name="teamid"/>
+		</property>
+		
+		<property name="courseid" type="integer">
+			<column name="courseid"  />
+		</property>
+		
+		<property name="type" type="integer">
+			<column name="type"  />
+		</property>
+		
+		<property name="oid" type="string">
+			<column name="oid" length="50" />
+		</property>
+		
+		<property name="coursetitle" type="string">
+			<column name="coursetitle" length="300" />
+		</property>
+		
+		<property name="courseimg" type="string">
+			<column name="courseimg" length="300" />
+		</property>
+		
+		<property name="price" type="double">
+			<column name="price"  />
+		</property>
+		
+		<property name="allprice" type="double">
+			<column name="allprice"  />
+		</property>
+		<property name="status" type="integer">
+			<column name="status"  />
+		</property>
+		
+		<property name="time" type="string">
+			<column name="time" length="300" />
+		</property>
+		
+		<property name="time1" type="string">
+			<column name="time1" length="300" />
+		</property>
+		
+		<property name="team" type="string">
+			<column name="team" length="100" />
+		</property>
+		
+		<property name="num" type="integer">
+			<column name="num"  />
+		</property>
+		
+		<property name="tuikuanstatus" type="integer">
+			<column name="tuikuanstatus"  />
+		</property>
+		
+		<property name="isfanyong" type="integer">
+			<column name="isfanyong"  />
+		</property>
+		
+		
+	</class>
+</hibernate-mapping>

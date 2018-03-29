@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Yewu" table="yewu" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="price" type="double">
+			<column name="price" />
+		</property>
+		
+		<property name="xiaoshounum" type="integer">
+			<column name="xiaoshounum" />
+		</property>
+		
+		<property name="img" type="string">
+			<column name="img" />
+		</property>
+		
+		<property name="biaoti" type="string">
+			<column name="biaoti" />
+		</property>
+		
+		<property name="jianjie" type="string">
+			<column name="jianjie" />
+		</property>
+		
+		<property name="xqimg" type="string">
+			<column name="xqimg" length="700"/>
+		</property>
+		
+		<property name="uptime" type="string">
+			<column name="uptime" length="500"/>
+		</property>
+		
+		<property name="xiaoxiang" type="double">
+			<column name="xiaoxiang" />
+		</property>
+
+		
+		
+
+
+	</class>
+</hibernate-mapping>

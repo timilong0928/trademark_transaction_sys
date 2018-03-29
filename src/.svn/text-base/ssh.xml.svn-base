@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:context="http://www.springf;ramework.org/schema/context"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans 
+http://www.springframework.org/schema/beans/spring-beans-2.5.xsd 
+http://www.springframework.org/schema/context 
+http://www.springframework.org/schema/context/spring-context-2.5.xsd 
+http://www.springframework.org/schema/aop 
+http://www.springframework.org/schema/aop/spring-aop-2.5.xsd">
+
+	<!-- 用于配置连接池 -->
+	<bean id="myDataSource" class="org.apache.commons.dbcp.BasicDataSource"
+		destroy-method="close">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url"
+			value="jdbc:mysql://localhost:3306/shangbiao18?characterEncoding=UTF-8&amp;zeroDateTimeBehavior=convertToNull" />
+		<property name="username" value="root" />
+		<property name="password" value="123123"/>
+        <!-- 最大连接数 -->
+        <property name="maxActive"><value>1000</value></property>
+       	<!-- 初始连接数 -->  
+        <property name="initialSize"><value>1</value></property>
+        <!-- 没连接可用时的等待时间 -->  
+        <property name="maxWait"><value>60000</value></property>
+        <!-- 最大空闲连接 -->  
+        <property name="maxIdle"><value>20</value></property>
+        <!-- -最小空闲连数 ，与最大 闲连接数接近最好！但不是最大最好  -->  
+        <property name="minIdle"><value>3</value></property>
+        <!-- 是否回收空闲连接 -->  
+        <property name="removeAbandoned"><value>true</value></property>
+        <!-- 几秒后回收 -->  
+        <property name="removeAbandonedTimeout"><value>180</value></property>  
+        <!-- 打开检查功能 -->
+        <property name="testWhileIdle"><value>true</value></property> <!-- 打开检查,用异步线程evict进行检查 -->  
+        <!-- 取连接时，测是否可用，不可用，取过 -->
+    	<property name="testOnBorrow"><value>true</value></property>  
+	    <!-- 返回连接的时候，看是不是可用，不可用，也不知道会怎么样 -->
+	    <property name="testOnReturn"><value>true</value></property> 
+	    <!-- 检查的时候用的 --> 
+	    <property name="validationQuery"><value>select name from admin</value></property> 
+        
+	</bean>
+
+	<!-- 用于配置sessionfactory,并注入连接池 -->
+	<bean id="mySessionFactory"
+		class="org.springframework.orm.hibernate3.LocalSessionFactoryBean">
+		<property name="dataSource" ref="myDataSource"></property>
+		
+		<property name="mappingLocations" 
+			value="classpath:mapping/*.hbm.xml">
+		</property>
+		
+		<property name="hibernateProperties">
+			<props>
+				<prop key="hibernate.dialect"> org.hibernate.dialect.MySQL5Dialect</prop>
+				<prop key="hibernate.show_sql">false</prop>
+				<prop key="hibernate.format_sql">true</prop>
+				<prop key="hibernate.hbm2ddl.auto">update</prop>
+			</props>
+		</property>
+	</bean>
+	<bean class="util.SpringUtil"></bean>
+	<bean id="hibernateDao" class="dao.HibernateDao">
+		<!-- 在userDao中注入sessionfactory -->
+		<property name="sessionFactory" ref="mySessionFactory">
+		</property>
+	</bean>
+	
+	
+	
+</beans>

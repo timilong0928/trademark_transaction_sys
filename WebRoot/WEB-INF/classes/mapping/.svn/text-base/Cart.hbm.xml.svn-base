@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+	<class name="Cart" table="cart" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+		
+		<property name="teamId" type="integer">
+			<column name="teamId" />
+		</property>
+
+		<property name="pid" type="integer">
+			<column name="pid" />
+		</property>
+		
+		<property name="num" type="integer">
+			<column name="num" />
+		</property>
+		
+		<property name="price" type="integer">
+			<column name="price" />
+		</property>
+		
+		<property name="allprice" type="integer">
+			<column name="allprice" />
+		</property>
+		
+		<property name="point" type="integer">
+			<column name="point" />
+		</property>
+		
+		<property name="allpoint" type="integer">
+			<column name="allpoint" />
+		</property>
+
+		<property name="img" type="string">
+			<column name="img"/>
+		</property>
+
+		<property name="title" type="string">
+			<column name="title"/>
+		</property>
+
+		<property name="yunfei" type="integer">
+			<column name="yunfei"/>
+		</property>
+		<property name="xuanze" type="integer">
+			<column name="xuanze"/>
+		</property>
+
+	</class>
+</hibernate-mapping>

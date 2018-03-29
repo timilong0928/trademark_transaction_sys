@@ -1,0 +1,65 @@
+K 25
+svn:wc:ra_dav:version-url
+V 50
+/svn/code/!svn/ver/13708/shangbiao18/src/com/utils
+END
+Mail.java
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/Mail.java
+END
+MD5Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/MD5Util.java
+END
+SecretUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/SecretUtil.java
+END
+CommonUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code/!svn/ver/13708/shangbiao18/src/com/utils/CommonUtil.java
+END
+RequestHandler.java
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/RequestHandler.java
+END
+GetWxOrderno.java
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/GetWxOrderno.java
+END
+WeixinOauth2Token.java
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/WeixinOauth2Token.java
+END
+MyX509TrustManager.java
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/MyX509TrustManager.java
+END
+Sha1Util.java
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/Sha1Util.java
+END
+TenpayUtil.java
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svn/code/!svn/ver/12478/shangbiao18/src/com/utils/TenpayUtil.java
+END

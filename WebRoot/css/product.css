@@ -1,0 +1,345 @@
+.equal { 
+	 display:table; 
+	 border-collapse:separate; 
+	 width:100%;
+	 height:40px;
+} 
+.row { 
+ 	display:table-row;  
+} 
+.row div { 
+	 display:table-cell; 
+	 text-align:center;
+	 padding-top:10px;
+	 
+} 
+.row .one { 
+	 width:45%;
+	 background:#009ddb;
+	 position:relative;
+} 
+.row .two { 
+ 	 width:0.5%; 
+ 	 background:#F5F5F5;
+ 	
+} 
+.row .three { 
+	 width:24.4%;
+	 background:#009ddb;
+	 position:relative;
+ }
+.row .four { 
+ 	 width:0.5%;
+ 	 background:#F5F5F5;
+
+ }
+.row .five { 
+	 width:30%;
+	 background:#009ddb;
+	 position:relative;
+ }
+ .line{
+	  positive:relative;
+	  text-align:center;
+	  margin:0 auto;
+	  width:98%;
+	  border:1px solid #D3D3D3;
+ }
+  .pline{
+	  positive:relative;
+	  text-align:center;
+	  margin:0 auto;
+	  width:90%;
+	  height:1px;
+	  background:#D3D3D3;
+ }
+  .pline1{
+	  positive:relative;
+	  text-align:center;
+	  margin:0 auto;
+	  width:100%;
+	  height:1px;
+	  background:#D3D3D3;
+ }
+ .equal1 { 
+	 display:table; 
+	 border-collapse:separate; 
+	 width:100%;
+	 height:40px;
+} 
+.row1 { 
+	display:table-row;
+	text-align:center;
+} 
+.row1 div { 
+	display:table-cell;
+	padding-top:10px;
+} 
+.row1 .one { 
+ 	width:45%;
+  
+}
+.row1 .one .p1 { 
+	color:#9D9D9D;
+} 
+.row1 .two { 
+ 	width:2%; 
+} 
+.row1 .three { 
+ 	width:23%;
+
+ }
+.row1 .four { 
+	 width:2%;
+ }
+.row1 .five { 
+ 	width:30%;
+
+ }
+ .row1 .five .p1 { 
+	color:#9D9D9D;
+} 
+.contain{
+ 
+ }
+.equal2 { 
+	 display:table; 
+	 border-collapse:separate; 
+	 width:100%;
+	 height:50px;
+} 
+.row2 { 
+ 	display:table-row;  
+} 
+.row2 div { 
+	 display:table-cell; 
+	 text-align:center;
+	 padding-top:15px;
+} 
+.row2 .one { 
+	width:25%;
+	background:#009ddb;
+	text-align:right;
+	color:#fff;
+} 
+.row2 .two { 
+	width:25%;
+	background:#009ddb;
+	font-size:18px;
+	color:#fff;
+}
+
+.row2 .three { 
+	width:25%;
+	background:#009ddb;
+	text-align:right;
+	color:#fff;
+ }
+.row2 .four { 
+	width:25%;
+	background:#009ddb;
+	font-size:18px;
+	color:#fff;
+ }
+.equal3 { 
+	 display:table; 
+	 border-collapse:separate; 
+	 width:100%;
+	 height:60px;
+} 
+.row3 { 
+ 	display:table-row;  
+} 
+.row3 div { 
+	 display:table-cell; 
+	 text-align:center;
+	 padding-top:17px;
+}
+.row3 .one { 
+	width:10%;
+} 
+.row3 .two { 
+	width:30%;
+	font-size:13px;
+
+}
+.row3 .three { 
+	width:10%;
+
+}
+.row3 .four { 
+	width:10%;
+}
+.row3 .five { 
+	width:30%;
+	font-size:13px;
+}
+.row3 .six { 
+	width:10%;
+}
+.e_line{
+	  positive:relative;
+	  text-align:center;
+	  margin:0 auto;
+	  width:100%;
+	  height:15px;
+	  background:#E6E6FA;
+}
+.equal4 { 
+	 display:table; 
+	 border-collapse:separate; 
+	 width:100%;
+	 height:50px;
+} 
+.row4 { 
+ 	display:table-row;
+ 	white-space:nowrap;
+ 	
+} 
+.row4 div { 
+	 display:table-cell; 
+	 text-align:center;
+	 padding-top:15px;
+}
+.row4 .one { 
+	width:40%;
+	font-size:15px;
+}
+ 
+.row4 .one .p1 { 
+	color:#9D9D9D;
+} 
+.row4 .two { 
+	width:20%;
+	font-size:15px;
+}
+.row4 .two .p0 { 
+	padding-right:40px;
+}
+.row4 .two .p2 { 
+	color:#DC143C;
+}
+.row4 .three { 
+	width:40%;
+	font-size:15px;
+	padding-right:40px;
+}
+.row4 .three .p0 { 
+	padding-right:30px;
+}
+.row4 .three .p1 { 
+	color:#9D9D9D;
+}
+
+.e_line2{
+ 	positive:relative;
+	text-align:center;
+	margin:0 auto;
+	width:100%;
+	border:1px solid #E6E6FA;
+}
+.e_line_bottom{
+ 	  position:fixed;
+      bottom:0;
+	  width:100%;
+	  height:40px;
+	  background:#E6E6FA;
+	  
+}
+.equal5{ 
+	 display:table; 
+	 border-collapse:separate; 
+	 width:100%;
+	 height:50px;
+} 
+.row5 { 
+ 	display:table-row;
+ 	white-space:nowrap;
+ 	
+} 
+.row5 div { 
+	 display:table-cell; 
+	 text-align:center;
+	 padding-top:15px;
+}
+.row4 .one { 
+	width:40%;
+	font-size:15px;
+}
+
+.row4 .two { 
+	width:60%;
+	font-size:15px;
+}
+.equalo{ 
+	 display:table; 
+	 border-collapse:separate; 
+	 width:100%;
+	 height:45px;
+} 
+.rowo { 
+ 	display:table-row;  
+} 
+.rowo div { 
+	 display:table-cell; 
+	 text-align:center;
+	 padding-top:15px;
+}
+.rowo .one { 
+	width:7%;
+} 
+.rowo .two { 
+	width:13%;
+	position:relative;
+}
+.rowo .three { 
+	width:13%;
+
+}
+.rowo .four { 
+	width:13%;
+	position:relative;
+}
+.rowo .five { 
+	width:10%;
+}
+.rowo .six{ 
+	width:13%;
+	position:relative;
+}
+.rowo .senven { 
+	width:13%;
+}
+.rowo .eight { 
+	width:13%;
+	position:relative;
+}
+.rowo .nine { 
+	width:7%;
+}
+.equald { 
+	 display:table; 
+	 border-collapse:separate; 
+	 width:100%;
+	 height:45px;
+} 
+.rowd { 
+ 	display:table-row;  
+} 
+.rowd div { 
+	 display:table-cell; 
+	 text-align:center;
+	 padding-top:15px;
+} 
+.rowd .one { 
+	width:50%;
+
+} 
+.rowd .two { 
+	width:30%;
+
+} 
+.rowd .three { 
+	width:20%;
+
+}

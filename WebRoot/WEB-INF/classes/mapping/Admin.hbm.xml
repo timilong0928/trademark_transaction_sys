@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?> 
+
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN" 
+
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="pojo">
+
+	<class name="Admin" table="admin" catalog="shangbiao18">
+
+		<id name="id" type="integer">
+			<column name="id" />
+			<generator class="native"></generator>
+		</id>
+
+		<property name="name" type="string">
+			<column name="name" length="100" />
+		</property>
+		
+		<property name="appid" type="string">
+			<column name="appid" length="300" />
+		</property>
+		
+		<property name="zhengimg" type="string">
+			<column name="zhengimg" length="500" />
+		</property>
+		
+		<property name="fanimg" type="string">
+			<column name="fanimg" length="500" />
+		</property>
+		
+		<property name="allimg" type="string">
+			<column name="allimg" length="500" />
+		</property>
+
+		<property name="nickName" type="string">
+			<column name="nickname" length="500" />
+		</property>
+		
+		<property name="phone" type="string">
+			<column name="phone" length="100" />
+		</property>
+		<property name="phone1" type="string">
+			<column name="phone1" length="100" />
+		</property>
+		
+		<property name="rname" type="string">
+			<column name="rname" length="50"></column>
+		</property>
+		
+		<property name="province" type="string">
+			<column name="province" length="20"></column>
+		</property>
+		
+		<property name="city" type="string">
+			<column name="city" length="100" />
+		</property>
+		
+		<property name="area" type="string">
+			<column name="area" length="100" />
+		</property>
+		
+		<property name="address" type="string">
+			<column name="address" length="100"/>
+		</property>
+
+		<property name="thistime" type="string">
+			<column name="thistime" length="100" />
+		</property>
+
+		<property name="lasttime" type="string">
+			<column name="lasttime" length="100" />
+		</property>
+
+
+		<property name="num" type="integer">
+			<column name="num" length="100" />
+		</property>
+
+		<property name="password" type="string">
+			<column name="password" length="100" />
+		</property>
+
+		<property name="img" type="string">
+			<column name="img" length="100" />
+		</property>
+
+		<property name="qianming" type="string">
+			<column name="qianming" length="300" />
+		</property>
+		
+		<property name="quanxian" type="string">
+			<column name="quanxian" length="300" />
+		</property>
+		
+
+
+	</class>
+</hibernate-mapping>
