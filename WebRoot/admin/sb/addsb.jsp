@@ -145,9 +145,30 @@
 									placeholder="请输入价格" />
 							</div>
 						</div>
-						
-						
-						
+						<!-- Edit by Timilong(13896901804@qq.com) 2018年3月30日 -->
+						<div class="form-group">
+							<div class="label">
+								<label for="sitename">
+									成本(内部)价格：
+								</label>
+							</div>
+							<div class="field">
+								<input type="text" class="input" id="sitename" name="sb.cost_price" size="50"
+									placeholder="请输入商品的成品价格" />
+							</div>
+						</div>						
+						<div class="form-group">
+							<div class="label">
+								<label for="sitename">
+									商标持有人：
+								</label>
+							</div>
+							<div class="field">
+								<input type="text" class="input" id="sitename" name="sb.sb_owner" size="50"
+									placeholder="请输入商品的成品价格" />
+							</div>
+						</div>							
+						<!-- Edit by Timilong(13896901804@qq.com) 2018年3月30日 -->
 			                    
 			              <div class="form-group">
 							<div class="label">

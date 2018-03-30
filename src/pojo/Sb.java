@@ -9,6 +9,11 @@ public class Sb {
 	private Integer id;//id(主键)
 	
 	private Double price=0.0;//价格
+	/* Edit by Timilong(13896901804@qq.com) 2018年3月30日*/
+	/* 需求一: 在商标页新添内部价格cost_price、sb_owner字段表示成本价格、商标持有人*/
+	private Double cost_price=0.0;  //内部价格
+	private String sb_owner="admin";  //商标持有人
+	/* Edit by Timilong(13896901804@qq.com) 2018年3月30日*/
 	private String title;//标题
 	private String img;//图标
 	private Integer fenleiid;//分类id
@@ -28,12 +33,6 @@ public class Sb {
 	
 	//临时字段
 	private String fenleiname;
-	
-	
-	
-	
-	
-	
 	
 	public String getFenleiname() {
 		return fenleiname;
@@ -82,6 +81,24 @@ public class Sb {
 	public void setPrice(Double price) {
 		this.price = price;
 	}
+	
+	/* Edit by Timilong(13896901804@qq.com) 2018年3月30日 */
+	/* 需求一: 在商标页新添内部价格cost_price、sb_owner字段表示成本价格、商标持有人 */
+	public Double getCostPrice() {
+		return cost_price;
+	}
+	public void setCostPrice(Double cost_price) {
+		this.cost_price = cost_price;
+	}
+	
+	public String getSbOwner() {
+		return sb_owner;
+	}
+	public void setSbOwner(String sb_owner) {
+		this.sb_owner = sb_owner;
+	}
+	/* Edit by Timilong(13896901804@qq.com) 2018年3月30日 */
+	
 	public void setId(Integer id) {
 		this.id = id;
 	}
@@ -123,9 +140,5 @@ public class Sb {
 				+ price + ", qunzu=" + qunzu + ", state=" + state + ", time="
 				+ time + ", title=" + title + ", xiaoxiang=" + xiaoxiang + "]";
 	}
-	
-	
-	
-	
 }
     

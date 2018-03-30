@@ -129,7 +129,10 @@ response.sendRedirect(request.getContextPath()+"/admin/login.jsp");
         	
         	<th width="400">标题</th>
         	<th width="300">商品价格</th>
-        	
+        	<!-- Edit by Timilong(13896901804@qq.com) 2018年3月30日-->
+        	<th width="300">内部(成本)价格</th>
+        	<th width="300">持有人</th>
+        	<!-- Edit by Timilong(13896901804@qq.com) 2018年3月30日-->
         	<th width="200">所属分类</th>
         	<th width="200">销售状态</th>
         	<th width="500">操作</th>
@@ -138,25 +141,26 @@ response.sendRedirect(request.getContextPath()+"/admin/login.jsp");
         	<s:iterator value="sbs">
         	
            <form action="sb!update1.action" method="post" enctype="multipart/form-data">
-            	 <input type="hidden" value="<s:property value="id"/>" name="sb.id"/>
-              	<tr>
+            <input type="hidden" value="<s:property value="id"/>" name="sb.id"/>
+              <tr>
               	
               	<td><div style="margin-top: 20px"   />${id}</div></td> 
               	<td><div style="margin-top: 20px" name="sb.title"  />${biaohao}</div></td> 
-	              <td><img height="70"  src="<%=request.getContextPath() %>/<s:property value="img"/>" /></td>
+	            <td><img height="70"  src="<%=request.getContextPath() %>/<s:property value="img"/>" /></td>
+	            <td><div style="margin-top: 20px"   />${title}</div></td>
+	            <td><div style="margin-top: 20px"   />${price}</div></td>
 	            
-	            
-	                 
-	              <td><div style="margin-top: 20px"   />${title}</div></td>
-	              <td><div style="margin-top: 20px"   />${price}</div></td>
-	              
-	             <td><div style="margin-top: 20px"   />${fenleiname}</div></td>
-		              <td><div style="margin-top: 20px"   />
+	            <!-- Edit by Timilong(13896901804@qq.com) 2018年3月30日-->
+	            <td><div style="margin-top: 20px"   />${cost_price}</div></td>
+	            <td><div style="margin-top: 20px"   />${sb_owner}</div></td>
+	            <!-- Edit by Timilong(13896901804@qq.com) 2018年3月30日-->
+	            <td><div style="margin-top: 20px"   />${fenleiname}</div></td>
+		        <td><div style="margin-top: 20px"   />
 		                <s:if test="state==0">销售中</s:if>
 		                <s:if test="state==1">已售</s:if>
 		                 </div>
 		               </td>
-	              <td>
+	            <td>
 	                
 	           		<a style="margin-top: 20px;font-size: 13px" href="sb!look1.action?sbid=<s:property value="id"/>"  class="button border-blue button-little" />查看</a>
 	           		

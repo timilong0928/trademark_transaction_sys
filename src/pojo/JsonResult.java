@@ -140,7 +140,4 @@ public class JsonResult {
 	public void setAllprice(Double allprice) {
 		this.allprice = allprice;
 	}
-	
-	
-
 }

@@ -30,14 +30,14 @@ public class SbAction extends BaseAction{
 	private String fileFileName;
 	
 	private int key;
-	private String keyword="";//收索内容
-	private String keyword1="";//收索内容
+	private String keyword="";//搜索内容
+	private String keyword1="";//搜索内容
 	
-	private String keyword2="";//返回收索内容
+	private String keyword2="";//返回搜索内容
 	
 	
-	private String keyword3="";//收索内容
-	private String keyword4="";//收索内容
+	private String keyword3="";//搜索内容
+	private String keyword4="";//搜索内容
 	
 	private Integer sbid;
 	private Integer sbid1;
@@ -179,7 +179,7 @@ public class SbAction extends BaseAction{
 			        			}
 								
 			        			}else {
-									msg="请不要输入无商标的分类";
+									msg="请不要输入无效的商标分类";
 									return "find1";
 								}	
 							}
@@ -201,7 +201,6 @@ public class SbAction extends BaseAction{
 				}
 			}
 			
-			
 		} catch (Exception e) {
 			e.printStackTrace();
 			msg="输入不符合规则，请重新输入";
@@ -215,13 +214,10 @@ public class SbAction extends BaseAction{
 		System.err.println("11111keyword==="+keyword);
 		
 		try {
-			
 		
 		if (keyword!=null||keyword!="") {
 			keyword2=keyword;
 
-			
-			
 			if (key==1) {
 				sbs=DAO.searchbiaohao(keyword);
 				session.put("sbs", sbs);
@@ -229,30 +225,20 @@ public class SbAction extends BaseAction{
 				
 					sbs=DAO.searchbiaohao1(keyword);
 					session.put("sbs", sbs);
-				
-				
 			}
 			
 		}else {
 			msg="请填写关键词";
 		}
 			
-			
-				
-				
-		        
 		for(Sb b:sbs){
-			
 			fenlei=DAO.findbyid(Sbfenlei.class, b.getFenleiid());
 			b.setFenleiname(fenlei.getName());
-			
 		}
 		} catch (Exception e) {
 			e.printStackTrace();
 			msg="输入不符合规则，请重新输入";
 		}	
-		
-		
 		return "find1";
 	}
 	//查找商标
@@ -279,10 +265,7 @@ public class SbAction extends BaseAction{
 		sb.setFenleiid(key);
 		fenlei=DAO.findbyid(Sbfenlei.class, key);
 		sb.setFenleiname(fenlei.getName());
-		
-			DAO.save(sb);
-		
-		
+		DAO.save(sb);
 		
 		return find1();
 	}
